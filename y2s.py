@@ -110,6 +110,7 @@ def main():
             title = remove_block(remove_block(remove_block(remove_block(title, "【】"), "{}"), "()"), "[]")
             title = re.sub('- Topic', '', title, re.IGNORECASE)
             title = re.sub('Official Video', '', title, re.IGNORECASE)
+            title = re.sub('Official Music Video', '', title, re.IGNORECASE)
             title = re.sub(' & ', ' ', title)
             
             ft_idx = title.lower().find(' ft.')
